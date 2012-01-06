@@ -250,11 +250,9 @@ header p{
 
 #centerstage {
 	margin: auto;
-	text-indent: -99999px;
 	color: #fff;
-	padding-top: 10px;
-	padding-bottom: 45px;
+	padding-top: 0;
+	padding-bottom: 50px;
 	width: 285px;
 	height: 80px;
-	background: url(../images/newmusic.png) no-repeat top left;
 }
