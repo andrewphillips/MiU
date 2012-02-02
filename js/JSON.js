@@ -4,242 +4,182 @@
 
 var jsonDefaults = {
 		"asset1": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "Tim's Fall"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Images"],
+			"epic": ["Epic Moment:", "Yes"],
+			"rating": ["Stars:", "4"],
+			"notes": ["Notes :: Stories", "This is when Tim fell into the river!"],
 		},
 		
 		"asset2": {
-			"packagenick": ["Package Name:", "Payment for Laura"],
-			"datesend": ["Ship Date:", "2011-12-20"],
-			"category": ["Package Type:", "Envelope"],
-			"rushorder": ["Expedite Shipment:", "No"],
-			"dontrush": ["Don't Expedite Shipment:", "Yes"],
-			"numberpackages": ["Amount to be Shipped:", "2"],
-			"notes": ["Shipping Notes", "Here are the two payments you requested."],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "No"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Images"],
+			"epic": ["Epic Moment:", "No"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "The sunset was beautiful today!"],
 		},
 		
 		"asset3": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Images"],
+			"epic": ["Epic Moment:", "Yes"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "beautiful"],
 		},
 		
 		"asset4": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Images"],
+			"epic": ["Epic Moment:", "Yes"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "happy place!"],
 		},
 		
 		"asset5": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "Tim is hilarious."]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Images"],
+			"epic": ["Epic Moment:", "Yes"],
+			"rating": ["Stars:", "4"],
+			"notes": ["Notes :: Stories", "Tim making bird noises while driving"],
 		},
 		
 		"asset6": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Videos"],
+			"epic": ["Epic Moment:", "No"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "We found the best Dine & Dash ever!"],
 		},
 		
 		"asset7": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Videos"],
+			"epic": ["Epic Moment:", "Yes"],
+			"rating": ["Stars:", "5"],
+			"notes": ["Notes :: Stories", "I thought we were going to get chased by the cops!"],
 		},
 		
 		"asset8": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Videos"],
+			"epic": ["Epic Moment:", "Yes"],
+			"rating": ["Stars:", "5"],
+			"notes": ["Notes :: Stories", "You will only make this mistake once in your life (hopefully)."],
 		},
 		
 		"asset9": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Videos"],
+			"epic": ["Epic Moment:", "Yes"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "This is when Tim fell into the river!"],
 		},
 		
 		"asset10": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Videos"],
+			"epic": ["Epic Moment:", "No"],
+			"rating": ["Stars:", "3"],
+			"notes": ["Notes :: Stories", "Here we are dancing and singing our favorite R.E.M. songs!"],
 		},
 		
 		"asset11": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Maps :: Routes"],
+			"epic": ["Epic Moment:", "No"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "A backroad we found."],
 		},
 		
 		"asset12": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Maps :: Routes"],
+			"epic": ["Epic Moment:", "No"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "This was the prettiest patch of woods ever!"],
 		},
 		
 		"asset13": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Maps :: Routes"],
+			"epic": ["Epic Moment:", "No"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "I was so bored on this road"],
 		},
 		
 		"asset14": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Maps :: Routes"],
+			"epic": ["Epic Moment:", "Yes"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "Never, ever, ever get on this interste @ 5pm"],
 		},
 		
 		"asset15": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Maps :: Routes"],
+			"epic": ["Epic Moment:", "No"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "We found a backroad to our hotel here."],
 		},
 		
 		"asset16": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Favorite Places"],
+			"epic": ["Epic Moment:", "Yes"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "Waffle House, Atlanta, GA"],
 		},
 		
 		"asset17": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Favorite Places"],
+			"epic": ["Epic Moment:", "No"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "Charlotte, NC"],
 		},
 		
 		"asset18": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Favorite Places"],
+			"epic": ["Epic Moment:", "Yes"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "A cool coffee shop; Boone, NC"],
 		},
 		
 		"asset19": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Favorite Places"],
+			"epic": ["Epic Moment:", "No"],
+			"rating": ["Stars:", "1"],
+			"notes": ["Notes :: Stories", "Coolest Hotel 6, Richmon, VA"],
 		},
 		
-		"asset20	": {
-			"packagenick": ["Package Name:", "Tim's CDs"],
-			"datesend": ["Ship Date:", "2011-12-15"],
-			"category": ["Package Type:", "Small Package"],
-			"rushorder": ["Expedite Shipment:", "Yes"],
-			"dontrush": ["Don't Expedite Shipment:", "No"],
-			"numberpackages": ["Amount to be Shipped:", "1"],
-			"notes": ["Shipping Notes", "Here are the CDs you left at my house!"],
-			"shipNotify": ["Send an \'Item Shipped\' notification?", "Yes"],
-			"progressNotify": ["Update progress of shipped package?", "Yes"]
+		"asset20": {
+			"title": ["Title:", "On the way to Washington, DC"]
+			"date": ["Date Added:", "2011-12-15"],
+			"category": ["Category:", "Favorite Places"],
+			"epic": ["Epic Moment:", "No"],
+			"rating": ["Stars:", "3"],
+			"notes": ["Notes :: Stories", "We made it to our hotel; Washington, DC"],
 		}
 };
