@@ -1,6 +1,6 @@
 // Andrew Phillips
 // MiU 0212
-// Default/Dummy Data
+// Default :: Dummy Data
 
 var jsonDefaults = {
 		"asset1": {
