@@ -6,9 +6,27 @@ body, html {
 }
 
 body {
-	font: 14px Helvetica, Arial, Sans-serif;
-	color: #333;
-	background: #bac4d3;
+	font: 16px Helvetica, Sans-serif;
+	color: #ffffff;
+	background: url(../images/concrete9.jpg);
+}
+
+#description p {
+	margin: 0 0 0 10px;
+	padding: 10px 20px 20px;
+	background: #333;
+	-moz-border-radius: 10px; 
+	border-radius: 10px;
+	color: #fff;
+}
+
+#construction p {
+	margin: 0 0 0 10px;
+	padding: 10px 20px 20px;
+	background: #333;
+	-moz-border-radius: 10px; 
+	border-radius: 10px;
+	color: #fff;
 }
 
 ul{
@@ -22,10 +40,10 @@ li{
 form{
 	padding: 10px;
 	background: none;
-	-moz-border-radius: 10px; 
-	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-appearance: none; 
 	color: white;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 fieldset{
@@ -37,8 +55,8 @@ header h1{
 	text-indent: -99999px;
 	color: #fff;
 	padding-top: 10px;
-	width: 285px;
-	height: 80px;
+	width: 270px;
+	height: 100px;
 	background: url(../images/journeys_main.png) no-repeat top left;
 }
 
@@ -63,45 +81,47 @@ header p{
 #container{
 	margin: 0 0 0 10px;
 	padding: 10px 20px 20px;
-	background: #2e2e2e;
+    /* background: #2e2e2e; */
 	-moz-border-radius: 10px; 
 	border-radius: 10px;
 	color: white;
 }
 
 #content {
-	background: #bac4d3;
+	/* background: #bac4d3; */
 	padding: 5px
 }
 
 #browse {
 	margin: 0 0 0 10px;
 	padding: 10px 20px 20px;
-	background: #2e2e2e;
+	/* background: #2e2e2e; */
+	background: #333;
 	-moz-border-radius: 10px; 
 	border-radius: 10px;
-	color: white;
+	color: #fff;
 }
 
 #browsecat {
 	padding: 5px 10px;
+	/* background: #ff352f; */
 	background: #ff352f;
 	color: #fff;
 	border: 0;
-	font-size: 14px;
+	font-size: 18px;
 	-moz-border-radius: 5px; 
 	border-radius: 5px;
 	margin: 0;
 	text-transform: uppercase;
 	text-decoration: none;
-	line-height: 50px;
+	line-height: 55px;
 	
 }
 
 #centerstage {
 	margin: auto;
 	color: #fff;
-	padding-top: 0;
+	padding-top: 5px;
 	padding-bottom: 50px;
 	width: 285px;
 	height: 80px;
