@@ -1,0 +1,108 @@
+/* Andrew Phillips VFW 1112 Project 4 */
+/* I will be cleanin this up as we go */
+
+body, html {
+	height: 100%;
+}
+
+body {
+	font: 14px Helvetica, Arial, Sans-serif;
+	color: #333;
+	background: #bac4d3;
+}
+
+ul{
+	list-style:none;
+}
+
+li{
+	padding: 0 0 5px;
+}
+
+form{
+	padding: 10px;
+	background: none;
+	-moz-border-radius: 10px; 
+	border-radius: 10px;
+	color: white;
+	font-size: 16px;
+}
+
+fieldset{
+	border: none;
+}
+
+header h1{
+	margin-left: 5px;
+	text-indent: -99999px;
+	color: #fff;
+	padding-top: 10px;
+	width: 285px;
+	height: 80px;
+	background: url(../images/musicme.png) no-repeat top left;
+}
+
+header p{
+	font-size: 18px;
+	padding: 0;
+	margin: auto;
+}
+
+#items a {
+	text-decoration: none;
+	color: #fff;
+	background: #ff352f;
+	padding: 5px;
+	-moz-border-radius: 5px; 
+	border-radius: 5px;
+	text-align: center;
+	display: block;
+	width: 130px;
+}
+
+#container{
+	margin: 0 0 0 10px;
+	padding: 10px 20px 20px;
+	background: #2e2e2e;
+	-moz-border-radius: 10px; 
+	border-radius: 10px;
+	color: white;
+}
+
+#content {
+	background: #bac4d3;
+	padding: 5px
+}
+
+#browse {
+	margin: 0 0 0 10px;
+	padding: 10px 20px 20px;
+	background: #2e2e2e;
+	-moz-border-radius: 10px; 
+	border-radius: 10px;
+	color: white;
+}
+
+#browsecat {
+	padding: 5px 10px;
+	background: #ff352f;
+	color: #fff;
+	border: 0;
+	font-size: 14px;
+	-moz-border-radius: 5px; 
+	border-radius: 5px;
+	margin: 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 50px;
+	
+}
+
+#centerstage {
+	margin: auto;
+	color: #fff;
+	padding-top: 0;
+	padding-bottom: 50px;
+	width: 285px;
+	height: 80px;
+}
