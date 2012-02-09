@@ -7,7 +7,7 @@ body, html {
 body {
 	font: 16px Helvetica, Sans-serif;
 	color: #ffffff;
-	background: url(../images/concrete9_small.jpg);
+	/* background: url(../images/concrete9_small.jpg); */
 }
 
 #description p {
@@ -83,7 +83,7 @@ header p{
     /* background: #2e2e2e; */
 	-moz-border-radius: 10px; 
 	border-radius: 10px;
-	color: white;
+	color: black;
 }
 
 #content {
@@ -125,3 +125,4 @@ header p{
 	width: 285px;
 	height: 80px;
 }
+

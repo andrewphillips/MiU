@@ -13,16 +13,19 @@
 	<meta http-equiv="cleartype" content="on" />
 <title>Journeys - Road Trip Scrapbook</title>
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+<!--	<link rel="stylesheet" href="css/style.css" type="text/css" />-->
+	<script src="js/libs/modernizr.custom.min.js"></script>
 </head>
 <body>
-	<div id="content">
+	<div data-role="page" id="home">
+		<div data-role="header">
 		<header>
 			<h1>Journeys</h1>
-				<div id="search">
+			<!--	<div id="theSearch">
 					<form action="#" method="post" id="searchForm">
-						<input type=search results=5 placeholder="Search…" autosave=5 name=s /><a href="construction.html"><button>Search</button></a>
+						<input type="search" title="Search" name="search" id="search"/><input type="submit" name="searchBtn" id="searchBtn" value="SEARCH">
 					</form>
+				</div> -->
 				</div>	
 				<div id="description">
 					<p>Capture all your road-trip memories with this handy app!</p>
@@ -32,13 +35,36 @@
 			<a href="additem.html"><img src="images/add_new.png" alt="add music" /></a>
 		</div>
 			<div id="browse">
-			<p>Browse Your Adventures!</p><br />
-				<a id="browsecat" href="construction.html">Images</a><br />
-				<a id="browsecat" href="construction.html">Videos</a><br />
-				<a id="browsecat" href="construction.html">Maps :: Routes</a><br />
-				<a id="browsecat" href="construction.html">Favorite Places</a><br />
-				<a id="browsecat" href="construction.html">Epic Moments</a><br />
+				<p>Browse Your Adventures!</p>
+					<div data-role="content">
+						<ul data-role="collapsible">
+						
+						
+						
+							<li><a id="browsecat" href="construction.html"><h3>Images</h3></a></li>
+							<li><a id="browsecat" href="construction.html">Videos</a></li>
+							<li><a id="browsecat" href="construction.html">Maps :: Routes</a></li>
+							<li><a id="browsecat" href="construction.html">Favorite Places</a></li>
+							<li><a id="browsecat" href="construction.html">Epic Moments</a></li>
+						</ul>
+				</div>
+			<div data-role="footer">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+					</ul>
+				</div>
+			</div>	
+						
+			</div>
 		</div>
+
+		
 	</div>
+	
+
+<script type="text/javascript" src="js/main.js"></script>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 </body>
 </html>
