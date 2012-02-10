@@ -164,12 +164,7 @@ window.addEventListener("DOMContentLoaded", function() {
 				}
 		}; */
 	
-	//Store the JSON object into Local Storage
-		for (var n in json){
-			var id = Math.floor(Math.random() * 100000001);
-			localStorage.setItem(id, JSON.stringify(json[n]));
-		}
-	}
+
 	
 	function validate(e){
 		//Elements we want to check

@@ -1,5 +1,5 @@
 /* Andrew Phillips MiU 0212 */
-
+/*
 body, html {
 	height: 100%;
 }
@@ -7,7 +7,7 @@ body, html {
 body {
 	font: 16px Helvetica, Sans-serif;
 	color: #ffffff;
-	/* background: url(../images/concrete9_small.jpg); */
+	/* background: url(../images/concrete9_small.jpg); 
 }
 
 #description p {
@@ -80,21 +80,21 @@ header p{
 #container{
 	margin: 0 0 0 10px;
 	padding: 10px 20px 20px;
-    /* background: #2e2e2e; */
+    /* background: #2e2e2e; 
 	-moz-border-radius: 10px; 
 	border-radius: 10px;
 	color: black;
 }
 
 #content {
-	/* background: #bac4d3; */
+	/* background: #bac4d3; 
 	padding: 5px
 }
 
 #browse {
 	margin: 0 0 0 10px;
 	padding: 10px 20px 20px;
-	/* background: #2e2e2e; */
+	/* background: #2e2e2e; 
 	background: #333;
 	-moz-border-radius: 10px; 
 	border-radius: 10px;
@@ -103,7 +103,7 @@ header p{
 
 #browsecat {
 	padding: 5px 10px;
-	/* background: #ff352f; */
+	/* background: #ff352f; 
 	background: #ff352f;
 	color: #fff;
 	border: 0;
@@ -125,4 +125,44 @@ header p{
 	width: 285px;
 	height: 80px;
 }
+*/ 
+#centerstage{
+	height: 145px;
+	width: 281px;
+	margin: 0 auto 20px;
+	clear: both;
+}
 
+.accordionButton h2{
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+	background: red;
+	color: #fff;
+	padding: 10px;
+	-moz-border-radius: 10px; 
+	border-radius: 10px;
+	text-transform: uppercase;
+	margin: 15px 0;
+}
+.accordionContent ul{
+	padding: 0;
+	color: #fff;
+}
+.accordionContent ul li a{
+	font-size: 16px;
+	text-align: center;
+	background: #2e2e2e;
+	color: #fff;
+	padding: 10px 0;
+	-moz-border-radius: 10px; 
+	border-radius: 10px;
+	display: block;
+	text-decoration: none;
+	margin: 5px ;
+	text-transform: uppercase;	
+}
+ul{
+padding: 0;
+list-style:none;
+}
