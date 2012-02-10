@@ -1,41 +1,1785 @@
 <!DOCTYPE html>
 <!-- Andrew Phillips -->
 <!-- MiU 0212 -->
-<!-- Project 1 -->
+<!-- Project 2 -->
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<meta name="robots" content="index, follow"/>
-	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-	<meta name="HandheldFriendly" content="true" />
-	<meta name="MobileOptimized" content="320" />	
-<title>Journeys - Road Trip Scrapbook</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+<meta charset="utf-8">
+<title>Journeys - Adventure Scrapbook</title>
+<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+<meta http-equiv="cleartype" content="on">
+<!-- StyleSheets under here -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<link rel="stylesheet" href="css/ps/style.css"/>
+<link rel="stylesheet" href="css/ps/jquery-mobile.css"/>
+<link rel="stylesheet" href="css/ps/photoswipe.css"/>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+<script src="js/libs/modernizr.custom.min.js"></script>
 </head>
 <body>
-	<div id="content">
+<div data-role="page" id="home">
+	<div data-role="header" data-theme="c" id="homehead">
+		<h1 id="headerh1">Journeys</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content" id="one">
 		<header>
-			<h1>Journeys</h1>
-				<div id="search">
-					<form action="#" method="post" id="searchForm">
-						<input type=search results=5 placeholder="Search…" autosave=5 name=s /><a href="construction.html"><button>Search</button></a>
-					</form>
-				</div>	
-				<div id="description">
-					<p>Capture all your road-trip memories with this handy app!</p>
-				</div>
+		<p>
+			Capture all your travel adventures with this handy app!
+		</p>
 		</header>
-		<div id="centerstage">
-			<a href="construction.html"><img src="images/add_new.png" alt="add music" /></a>
+		<div id="cta1">
+			<a href="#browsegal"><img src="images/cta1.png" alt="add design"/></a>
 		</div>
-			<div id="browse">
-			<p>Browse Your Adventures!</p><br />
-				<a id="browsecat" href="construction.html">Images</a><br />
-				<a id="browsecat" href="construction.html">Videos</a><br />
-				<a id="browsecat" href="construction.html">Maps :: Routes</a><br />
-				<a id="browsecat" href="construction.html">Favorite Places</a><br />
-				<a id="browsecat" href="construction.html">Epic Moments</a><br />
+		<h3 id="catbrowse">Browse Your Adventures!</h3>
+		<div data-role="collapsible-set" id="cats">
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>USA</h3>
+				<ul>
+					<li><a href="#website" data-role="button">Websites</a></li>
+					<li><a href="#logos" data-role="button">Logos</a></li>
+					<li><a href="#graphic" data-role="button">Graphic</a></li>
+					<li><a href="#ui" data-role="button">UI</a></li>
+				</ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Canada</h3>
+				<ul>
+					<li><a href="#package" data-role="button">Package</a></li>
+					<li><a href="#bizcards" data-role="button">Biz Cards</a></li>
+					<li><a href="#posters" data-role="button">Posters</a></li>
+					<li><a href="#media" data-role="button">Media</a></li>
+				</ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Mexico</h3>
+				<ul>
+					<li><a href="#winter" data-role="button">Winter</a></li>
+					<li><a href="#spring" data-role="button">Spring</a></li>
+					<li><a href="#summer" data-role="button">Summer</a></li>
+					<li><a href="#fall" data-role="button">Fall</a></li>
+				</ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Europe</h3>
+				<ul>
+					<li><a href="#portrait" data-role="button">Portrait</a></li>
+					<li><a href="#landscape" data-role="button">Landscape</a></li>
+					<li><a href="#urbancity" data-role="button">Urban/City</a></li>
+					<li><a href="#bandw" data-role="button">B&W</a></li>
+				</ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Japan</h3>
+				<ul>
+					<li><a href="#bedroom" data-role="button">Bedroom</a></li>
+					<li><a href="#kitchen" data-role="button">Kitchen</a></li>
+					<li><a href="#living" data-role="button">Living</a></li>
+					<li><a href="#office" data-role="button">Office</a></li>
+				</ul>
+			</div>
+		</div>
+		<p>
+			<a href="#list" data-role="button" id="viewall">View All Gallery Items</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
 		</div>
 	</div>
+	<!-- /footer -->
+</div>
+<!-- /page one -->
+<!-- Start of second page: #two -->
+<div data-role="page" id="browsegal" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul class="gallery">
+			<li><a href="#myimage1" rel="external"><img src="images/s1.jpg" alt="My Website"/></a></li>
+			<li><a href="#myimage2" rel="external"><img src="images/s2.jpg" alt="Image 002"/></a></li>
+			<li><a href="#myimage3" rel="external"><img src="images/s3.jpg" alt="Image 003"/></a></li>
+			<li><a href="#myimage4" rel="external"><img src="images/s4.jpg" alt="Image 004"/></a></li>
+			<li><a href="#myimage5" rel="external"><img src="images/s5.jpg" alt="Image 005"/></a></li>
+			<li><a href="#myimage6" rel="external"><img src="images/s6.jpg" alt="Image 006"/></a></li>
+			<li><a href="#myimage7" rel="external"><img src="images/s7.jpg" alt="Image 007"/></a></li>
+			<li><a href="#myimage8" rel="external"><img src="images/s8.jpg" alt="Image 008"/></a></li>
+			<li><a href="#myimage9" rel="external"><img src="images/s9.jpg" alt="Image 009"/></a></li>
+			<li><a href="#myimage10" rel="external"><img src="images/s10.jpg" alt="Image 010"/></a></li>
+			<li><a href="#myimage11" rel="external"><img src="images/s11.jpg" alt="Image 011"/></a></li>
+			<li><a href="#myimage12" rel="external"><img src="images/s12.jpg" alt="Image 012"/></a></li>
+			<li><a href="#myimage13" rel="external"><img src="images/s13.jpg" alt="Image 013"/></a></li>
+			<li><a href="#myimage14" rel="external"><img src="images/s14.jpg" alt="Image 014"/></a></li>
+			<li><a href="#myimage15" rel="external"><img src="images/s15.jpg" alt="Image 015"/></a></li>
+			<li><a href="#myimage16" rel="external"><img src="images/s16.jpg" alt="Image 016"/></a></li>
+			<li><a href="#myimage17" rel="external"><img src="images/s17.jpg" alt="Image 017"/></a></li>
+			<li><a href="#myimage18" rel="external"><img src="images/s18.jpg" alt="Image 018"/></a></li>
+			<li><a href="#myimage19" rel="external"><img src="images/s19.jpg" alt="Image 019"/></a></li>
+			<li><a href="#myimage20" rel="external"><img src="images/s20.jpg" alt="Image 020"/></a></li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page gallery -->
+<div data-role="page" id="myimage1" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s1.jpg"/>
+		<ul>
+			<li>Design Name: My site</li <li>
+			Date Discovered: 12-17-2010</li>
+			<li>Design Category: Web</li>
+			<li>Design Subcategory: Website</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage1 -->
+<div data-role="page" id="myimage2" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s2.jpg"/>
+		<ul>
+			<li>Design Name: My fav!</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Web</li>
+			<li>Design Subcategory: Logos</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage2 -->
+<div data-role="page" id="myimage3" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s3.jpg"/>
+		<ul>
+			<li>Design Name: Whoa colors</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Web</li>
+			<li>Design Subcategory: Graphic</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage3 -->
+<div data-role="page" id="myimage4" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s4.jpg"/>
+		<ul>
+			<li>Design Name: Great UI</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Web</li>
+			<li>Design Subcategory: UI</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage4 -->
+<div data-role="page" id="myimage5" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s5.jpg"/>
+		<ul>
+			<li>Design Name: FP Package</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Print</li>
+			<li>Design Subcategory: Package</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage5 -->
+<div data-role="page" id="myimage6" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s6.jpg"/>
+		<ul>
+			<li>Design Name: My Cards</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Print</li>
+			<li>Design Subcategory: Bizcards</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage6 -->
+<div data-role="page" id="myimage7" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s7.jpg"/>
+		<ul>
+			<li>Design Name: Great Poster</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Print</li>
+			<li>Design Subcategory: Posters</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage7 -->
+<div data-role="page" id="myimage8" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s8.jpg"/>
+		<ul>
+			<li>Design Name: Brochure</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Print</li>
+			<li>Design Subcategory: Media</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage8 -->
+<div data-role="page" id="myimage9" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s9.jpg"/>
+		<ul>
+			<li>Design Name: Furry!</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Fashion</li>
+			<li>Design Subcategory: Winter</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage9 -->
+<div data-role="page" id="myimage10" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s10.jpg"/>
+		<ul>
+			<li>Design Name: Satchel</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Fashion</li>
+			<li>Design Subcategory: Spring</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage10 -->
+<div data-role="page" id="myimage11" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s11.jpg"/>
+		<ul>
+			<li>Design Name: Sundress</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Fashion</li>
+			<li>Design Subcategory: Summer</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage11 -->
+<div data-role="page" id="myimage12" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s12.jpg"/>
+		<ul>
+			<li>Design Name: Boots!</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Fashion</li>
+			<li>Design Subcategory: Fall</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage12 -->
+<div data-role="page" id="myimage13" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s13.jpg"/>
+		<ul>
+			<li>Design Name: Kids</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Photography</li>
+			<li>Design Subcategory: Portrait</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage13 -->
+<div data-role="page" id="myimage14" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s14.jpg"/>
+		<ul>
+			<li>Design Name: Love Landscapes</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Photography</li>
+			<li>Design Subcategory: Landscape</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage14 -->
+<div data-role="page" id="myimage15" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s15.jpg"/>
+		<ul>
+			<li>Design Name: Bricks!</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Photography</li>
+			<li>Design Subcategory: Urbancity</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage15 -->
+<div data-role="page" id="myimage16" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s16.jpg"/>
+		<ul>
+			<li>Design Name: B&W Amazingness</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Photography</li>
+			<li>Design Subcategory: BandW</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage16 -->
+<div data-role="page" id="myimage17" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s17.jpg"/>
+		<ul>
+			<li>Design Name: Lovely Bedspread</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Interior</li>
+			<li>Design Subcategory: Bedroom</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage17 -->
+<div data-role="page" id="myimage18" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s18.jpg"/>
+		<ul>
+			<li>Design Name: Deep Sink</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Interior</li>
+			<li>Design Subcategory: Kitchen</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage18 -->
+<div data-role="page" id="myimage19" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s19.jpg"/>
+		<ul>
+			<li>Design Name: Couch, love!</li>
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Interior</li>
+			<li>Design Subcategory: Living</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage19 -->
+<div data-role="page" id="myimage20" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<img src="http://sitesquared.com/s20.jpg"/>
+		<ul>
+			<li>Design Name: Great Office Chair</li 
+			<li>Date Discovered: 12-17-2010</li>
+			<li>Design Category: Interior</li>
+			<li>Design Subcategory: Office</li>
+			<li>Featured: Yes</li>
+			<li>Design Appeal: 9</li>
+			<li>Design Notes: Love This! </li>
+		</ul>
+		<p>
+			<a href="#browsegal" data-role="button">Return to Gallery</a>
+		</p>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage20 -->
+<div data-role="page" id="list" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<img src="http://sitesquared.com/s1.jpg"/>
+			<h3>My site</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Web</li>
+				<li>Design Subcategory: Website</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s2.jpg"/>
+			<h3>My fav!</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Web</li>
+				<li>Design Subcategory: Logos</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s3.jpg"/>
+			<h3>Whoa colors</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Web</li>
+				<li>Design Subcategory: Graphic</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s4.jpg"/>
+			<h3>Great UI</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Web</li>
+				<li>Design Subcategory: UI</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s5.jpg"/>
+			<h3>FP Package</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Print</li>
+				<li>Design Subcategory: Package</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s6.jpg"/>
+			<h3>My Cards</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Print</li>
+				<li>Design Subcategory: Bizcards</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s7.jpg"/>
+			<h3>Great Poster</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Print</li>
+				<li>Design Subcategory: Posters</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s8.jpg"/>
+			<h3>Brochure</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Print</li>
+				<li>Design Subcategory: Media</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s9.jpg"/>
+			<h3>Furry!</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Fashion</li>
+				<li>Design Subcategory: Winter</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s10.jpg"/>
+			<h3>Satchel</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Fashion</li>
+				<li>Design Subcategory: Spring</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s11.jpg"/>
+			<h3>Sundress</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Fashion</li>
+				<li>Design Subcategory: Summer</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s12.jpg"/>
+			<h3>Boots!</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Fashion</li>
+				<li>Design Subcategory: Fall</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s13.jpg"/>
+			<h3>Kids</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Photography</li>
+				<li>Design Subcategory: Portrait</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s14.jpg"/>
+			<h3>Love Landscapes</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Photography</li>
+				<li>Design Subcategory: Landscape</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s15.jpg"/>
+			<h3>Bricks!</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Photography</li>
+				<li>Design Subcategory: Urbancity</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s16.jpg"/>
+			<h3>B&W Amazingness</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Photography</li>
+				<li>Design Subcategory: BandW</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s17.jpg"/>
+			<h3>Lovely Bedspread</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Interior</li>
+				<li>Design Subcategory: Bedroom</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s18.jpg"/>
+			<h3>Deep Sink</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Interior</li>
+				<li>Design Subcategory: Kitchen</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s19.jpg"/>
+			<h3>Couch, love!</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Interior</li>
+				<li>Design Subcategory: Living</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+			<li>
+			<img src="http://sitesquared.com/s20.jpg"/>
+			<h3>Great Office Chair</h3>
+			<ul>
+				<li>Date Discovered: 12-17-2010</li>
+				<li>Design Category: Interior</li>
+				<li>Design Subcategory: Office</li>
+				<li>Featured: Yes</li>
+				<li>Design Appeal: 9</li>
+				<li>Design Notes: Love This! </li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page myimage1 -->
+<div data-role="page" id="website" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage1">
+			<img src="http://sitesquared.com/s1.jpg"/>
+			<h3>My site</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page website -->
+<div data-role="page" id="logos" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage2">
+			<img src="http://sitesquared.com/s2.jpg"/>
+			<h3>My fav!</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page logos -->
+<div data-role="page" id="graphic" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage3">
+			<img src="http://sitesquared.com/s3.jpg"/>
+			<h3>Whoa colors</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page graphic -->
+<div data-role="page" id="ui" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage4"><img src="http://sitesquared.com/s4.jpg"/>
+			<h3>Great UI</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page ui -->
+<div data-role="page" id="package" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage5"><img src="http://sitesquared.com/s5.jpg"/>
+			<h3>FP Package</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page package -->
+<div data-role="page" id="bizcards" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage6"><img src="http://sitesquared.com/s6.jpg"/>
+			<h3>My Cards</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page bizcards -->
+<div data-role="page" id="posters" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage7"><img src="http://sitesquared.com/s7.jpg"/>
+			<h3>Great Poster</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page posters -->
+<div data-role="page" id="media" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage8"><img src="http://sitesquared.com/s8.jpg"/>
+			<h3>Brochure</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page media -->
+<div data-role="page" id="winter" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage9"><img src="http://sitesquared.com/s9.jpg"/>
+			<h3>Furry!</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page winter -->
+<div data-role="page" id="spring" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage10"><img src="http://sitesquared.com/s10.jpg"/>
+			<h3>Satchel</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page spring -->
+<div data-role="page" id="summer" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage11"><img src="http://sitesquared.com/s11.jpg"/>
+			<h3>Sundress</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page summer -->
+<div data-role="page" id="fall" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage12"><img src="http://sitesquared.com/s12.jpg"/>
+			<h3>Boots!</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page fall -->
+<div data-role="page" id="portrait" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage13"><img src="http://sitesquared.com/s13.jpg"/>
+			<h3>Kids</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page portrait -->
+<div data-role="page" id="landscape" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage14"><img src="http://sitesquared.com/s14.jpg"/>
+			<h3>Love Landscapes</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page landscape -->
+<div data-role="page" id="urbancity" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage15"><img src="http://sitesquared.com/s15.jpg"/>
+			<h3>Bricks!</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page urbancity -->
+<div data-role="page" id="bandw" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage16"><img src="http://sitesquared.com/s16.jpg"/>
+			<h3>B&W Amazingness</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page bandw -->
+<div data-role="page" id="bedroom" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage17"><img src="http://sitesquared.com/s17.jpg"/>
+			<h3>Lovely Bedspread</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page bedroom -->
+<div data-role="page" id="kitchen" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage18"><img src="http://sitesquared.com/s18.jpg"/>
+			<h3>Deep Sink</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page kitchen -->
+<div data-role="page" id="living" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage19"><img src="http://sitesquared.com/s19.jpg"/>
+			<h3>Couch, love!</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page living -->
+<div data-role="page" id="office" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li>
+			<a href="#myimage20"><img src="http://sitesquared.com/s20.jpg"/>
+			<h3>Great Office Chair</h3>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page office -->
+<div data-role="page" id="adddesign">
+	<div data-role="header" data-theme="c" id="headother">
+		<h1 id="headnothome">Designer's Eye</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content" >
+
+		<form action="" method="post" id="theDesignForm">
+		
+			<div data-role="fieldcontain">
+				<label for="dname">Design Name</label>
+				<input name="dname" type="text" id="dname" class="required"/>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="durl">Design URL</label>
+				<input name="durl" type="text" id="durl" class="required url" />
+				<small class="prompt">http://domain.com/img.jpg</small>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="ddate">Date Discovered</label>
+				<input name="ddate" type="date" id="ddate" class="date required"/>
+				<small class="prompt">MM/DD/YYYY</small>
+			</div>
+			<div data-role="fieldcontain"><!-- select -->
+				<label for="category">Design Category</label>
+				<select id="groups">
+					<option data-placeholder="true">Choose a Category</option>
+					<option value="Web">Web</option>
+					<option value="Print">Print</option>
+					<option value="Fashion">Fashion</option>
+					<option value="Photography">Photography</option>
+					<option value="Interior">Interior</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain"><!-- subselect -->
+				<label for="subcategory">Subcategory</label>
+				<select id="subgroups">
+					<option data-placeholder="true">Choose a Subcategory</option>
+					<option value="Websites">Websites</option>
+					<option value="Logos">Logos</option>
+					<option value="Graphic">Graphic</option>
+					<option value="UI">UI</option>
+					<option value="Package">Package</option>
+					<option value="Cards">Cards</option>
+					<option value="Posters">Posters</option>
+					<option value="Media">Media</option>
+					<option value="Winter">Winter</option>
+					<option value="Spring">Spring</option>
+					<option value="Summer">Summer</option>
+					<option value="Fall">Fall</option>
+					<option value="Portrait">Portrait</option>
+					<option value="Landscape">Landscape</option>
+					<option value="City">City</option>
+					<option value="BlackWhite">BlackWhite</option>
+					<option value="Bedroom">Bedroom</option>
+					<option value="Kitchen">Kitchen</option>
+					<option value="Living">Living</option>
+					<option value="Office">Office</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+					<input type="checkbox" value="Yes" checked="checked" name="feature" id="feature"/><label for="feature">Featured Design</label>
+				</fieldset>
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="appeal">Design Appeal</label>
+				<input name="appeal" type="range" min="0" max="10" step="1" value="0" id="appeal"/>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="notes">Design Notes</label><br />
+				<textarea id="notes"></textarea>
+			</div>
+			<div data-role="fieldcontain">
+				<input id="mysubmit" type="submit" value="Save Design" data-theme="b" />
+			</div>
+			<div data-role="fieldcontain" id="reset" >
+			<input type="reset" value="Clear All" data-theme="c" />
+			</div>
+		</form>
+
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#browsegal" data-icon="grid">Gallery</a></li>
+				<li><a href="#browsegal" data-icon="star">Favs</a></li>
+				<li><a href="#adddesign" data-icon="plus">Submit</a></li>
+				<li><a href="#list" data-icon="search">Search</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page adddesign -->
+<!-- JavaScript under here -->
+<script type="text/javascript" src="js/ps/klass.min.js"></script>
+<script type="text/javascript" src="js/ps/code.photoswipe-3.0.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+<script type="text/javascript" src="js/ps.js"></script>
+<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
