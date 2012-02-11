@@ -133,35 +133,7 @@ header p{
 	clear: both;
 }
 
-.accordionButton h2{
-	font-size: 20px;
-	font-weight: normal;
-	text-align: center;
-	background: red;
-	color: #fff;
-	padding: 10px;
-	-moz-border-radius: 10px; 
-	border-radius: 10px;
-	text-transform: uppercase;
-	margin: 15px 0;
-}
-.accordionContent ul{
-	padding: 0;
-	color: #fff;
-}
-.accordionContent ul li a{
-	font-size: 16px;
-	text-align: center;
-	background: #2e2e2e;
-	color: #fff;
-	padding: 10px 0;
-	-moz-border-radius: 10px; 
-	border-radius: 10px;
-	display: block;
-	text-decoration: none;
-	margin: 5px ;
-	text-transform: uppercase;	
-}
+
 ul{
 padding: 0;
 list-style:none;
