@@ -1642,7 +1642,8 @@
 		
 			<div data-role="fieldcontain">
 				<label for="jtitle">Title</label>
-				<input name="jtitle" type="text" id="jtitle" class="required"/>
+				<input name="jtitle" type="text" id="jtitle" class="required" />
+<!--				<small class="prompt">Name Me!</small> -->
 			</div>
 			<div data-role="fieldcontain">
 				<label for="jdate">Journey Date</label>
@@ -1650,13 +1651,15 @@
 				<small class="prompt">MM/DD/YYYY</small>
 			</div>
 			<div data-role="fieldcontain">
-				<input id="addMedia" type="button" value="Add Media" data-iconpos="top" data-icon="star" data-theme="a" data-corners="false"/>
+				<a href="construction.html" id="addMedia" type="submit" value="Add Media" data-theme="a" data-iconpos="top" data-icon="star" data-corners="false">Add Media</a>
+
+			<!--	<input id="addMedia" type="button" value="Add Media" data-iconpos="top" data-icon="star" data-theme="a" data-corners="false"/> -->
 			</div>
 
 			<div data-role="fieldcontain"><!-- select -->
-				<label for="category">Region</label>
+				<label for="category">Country</label>
 				<select id="groups">
-					<option data-placeholder="true">Choose a Region</option>
+<!--					<option data-placeholder="true">Pick From List</option> -->
 					<option value="USA">USA</option>
 					<option value="New Zealand">New Zealand</option>
 					<option value="Mexico">Mexico</option>
@@ -1667,7 +1670,7 @@
 			<div data-role="fieldcontain"><!-- subselect -->
 				<label for="subcategory">Category</label>
 				<select id="subgroups">
-					<option data-placeholder="true">Choose a Category</option>
+					<option data-placeholder="true">Choose Your Category</option> 
 					<option value="usaLands">USA | Landscapes</option>
 					<option value="usaFood">USA | Food</option>
 					<option value="usaMaps">USA | Maps :: Routes</option>
@@ -1693,17 +1696,18 @@
 
 			<div data-role="fieldcontain">
 				<label for="jrating">Rating</label>
-				<input name="jrating" type="range" min="0" max="10" step="1" value="0" id="jrating"/>
+				<input name="jrating" type="range" min="0" max="10" step="1" value="8" id="jrating"/>
 			</div>
 			<div data-role="fieldcontain">
 				<label for="notes">Notes :: Stories</label><br />
-				<textarea id="notes"></textarea>
+				<textarea id="notes">Details go here!</textarea>
 			</div>
+
 			<div data-role="fieldcontain">
-				<a href="#home" id="mysubmit" type="submit" value="Save Journey" data-theme="b">Save Journey</a>
+				<input id="mysubmit" type="submit" value="Save Journey" data-theme="b" />
 			</div>
 			<div data-role="fieldcontain" id="reset" >
-			<input type="reset" value="Clear All" data-theme="c" />
+				<input type="reset" value="Clear All" data-theme="c" />
 			</div>
 		</form>
 
