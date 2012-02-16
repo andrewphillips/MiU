@@ -155,4 +155,4 @@ label.error{
 	background: #ff352f !important;
 }
 #scrapbookForm input, #scrapbookForm textarea{background: #fff}
-/* #reset .ui-shadow{box-shadow: none !important;border: 1px solid #efefef;} */
+#reset .ui-shadow{box-shadow: none !important;border: 1px solid #efefef;} */
