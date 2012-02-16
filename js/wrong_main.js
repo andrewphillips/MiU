@@ -1,5 +1,6 @@
 
 // Week 3 - MiU - Form Validation
+//Andrew Phillips
 
 $("#scrapbookForm").validate({
     submitHandler: function(form) {
