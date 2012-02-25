@@ -2,7 +2,8 @@
 // Week 3 - MiU - Form Validation
 //Andrew Phillips
 
-$("#scrapbookForm").validate({
+		
+ $("#scrapbookForm").validate({
     submitHandler: function(form) {
         console.log("Call Action");
     }
@@ -15,6 +16,7 @@ window.onload = function() {
 
   
 }
+
 
 function applyDefaultplaceholder(elem, val) {
   elem.style.color = '#999';
@@ -37,6 +39,8 @@ $(document).ready( function() {
     var now = new Date();
     var today = now.getMonth() + '/' + now.getDate() + '/' + now.getFullYear();
     $('#jdate').val(today);
+    
+
     
 });
 $.mobile.selectmenu.prototype.options.hidePlaceholderMenuItems = false;

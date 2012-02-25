@@ -125,7 +125,39 @@ header p{
 	width: 285px;
 	height: 80px;
 }
-*/ 
+/*.ui-btn-up-b {
+	background: #ff352f !important;
+} */
+
+body,html{
+	height: 100%;
+}
+body {
+	font: 14px Helvetica, Arial, Sans-serif;
+	color: black;
+}
+.ui-body-a, .ui-body-b,.ui-body-c,.ui-body-d,.ui-body-e{
+	color: black;
+	background: url(../images/concrete9_small.jpg) repeat top left ;
+}
+
+ul{
+	padding: 0;
+	list-style:none;
+}
+
+.ui-collapsible .ui-btn-inner {
+	background: #d82b24;
+	color: #fff;
+	text-shadow: none;
+	text-transform: uppercase;
+}
+
+.ui-collapsible .ui-btn-corner-all{
+	color: white;
+	background: #455e9a;
+}
+
 #centerstage{
 	height: 145px;
 	width: 281px;
@@ -133,26 +165,84 @@ header p{
 	clear: both;
 }
 
-
-ul{
-padding: 0;
-list-style:none;
+#homehead{
+	background: none;
+	border: none;
 }
+
+#headerh1{
+	margin:10px auto 0;
+	text-indent: -9999px;
+	color: black;
+	padding-top: 10px;
+	height: 100px;
+	background: url(../images/journeys_main.png) no-repeat top center;
+}
+
+header p{
+	font-size: 16px;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	text-shadow: none;
+	color: black;
+}
+
+#cta1{
+	padding-bottom: 20px;
+	margin-left: auto;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-top: 10px;
+	height: 110px;
+	width: 281px;
+	clear: both;
+}
+
+#headnothome{
+	margin:10px auto 0;
+	text-indent: -9999px;
+	padding-top: 10px;
+	height: 50px;
+	background: url(../images/journeys_small.png) no-repeat top center;
+}
+
+#headother{
+	border: #dedede solid 1px;
+}
+
+.ui-collapsible-content {
+    background: #969696;
+}
+
+#viewall{
+	background: #455e9a;
+	color: white;
+}
+
+#catbrowse{
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 label.error{
+	border-color: #ff282b;
+	border-style: groove;
+	background-color: white;
 	display:block; 
 	margin: 10px 0; 
 	color: #cc0000;
 }
 .prompt{
-	color: #ccc;
+	background-color: #464646;
+	color: black;
 	margin-left: 8px;
 }
 
-/*.ui-btn-up-b {
-	background: #ff352f !important;
-} */
+
 .ui-btn-hover-b{
-	background: #ff352f !important;
+	background: #d82b24 !important;
 }
-#scrapbookForm input, #scrapbookForm textarea{background: #fff}
-#reset .ui-shadow{box-shadow: none !important;border: 1px solid #efefef;} */
+#scrapbookForm input, #scrapbookForm textarea{background-color: white;}
+#reset .ui-shadow{box-shadow: none !important;border: 1px solid #efefef;} 
